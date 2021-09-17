@@ -3,23 +3,42 @@ import ReactDOM from 'react-dom';
 import Card from './Cards';
 import './App';
 import "./index.css";
+import Sdata from "./Sdata";
+
+// console.log(Sdata[0].sname);
 
 
 
 ReactDOM.render(
   <>
-  <Card imgsrc="https://wallpapercave.com/w/wp6201564.jpg" 
-  title="A Netflix Original Series"  sname="Money Heist"
-  link="https://www.netflix.com/np/title/80192098"/>
+  <h1 className="heading_style">List Of Top 4 Netflix Series in 2021</h1>
 
+  <Card 
+  imgsrc={Sdata[0].imgsrc}
+  title={Sdata[0].title}
+  sname={Sdata[0].sname}
+  link={Sdata[0].link} 
+  />
 
-  <Card imgsrc="https://wallpapercave.com/w/wp6129371.jpg" 
-  title="A Netflix Original Series"  sname="Stranger Things"
-  link="https://www.netflix.com/np/title/80057281"/>
+  <Card 
+  imgsrc={Sdata[1].imgsrc}
+  title={Sdata[1].title}
+  sname={Sdata[1].sname}
+  link={Sdata[1].link} 
+  />
+  <Card 
+  imgsrc={Sdata[2].imgsrc}
+  title={Sdata[2].title}
+  sname={Sdata[2].sname}
+  link={Sdata[2].link} 
+  />
+  <Card 
+  imgsrc={Sdata[3].imgsrc}
+  title={Sdata[3].title}
+  sname={Sdata[3].sname}
+  link={Sdata[3].link} 
+  />
 
-  <Card imgsrc="https://wallpapercave.com/w/wp5164052.jpg" 
-  title="A Netflix Original Series"  sname="Lucifer"
-  link="https://www.netflix.com/np/title/80057918"/>
   </>,
   document.getElementById('root')
 );
